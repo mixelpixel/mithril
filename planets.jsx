@@ -70,13 +70,12 @@ class PlanetFilter {
     const { key, func } = vnode.attrs;
     return (
       <label>
-        <input type="radio"
-               name="filter"
-               onchange={filterHandler(func)} /> {key}
+        <input type="radio" name="filter" onchange={filterHandler(func)} /> {key}
       </label>
     );
   }
 }
+
 function filterHandler(filterFunction) {
   return function(event) {
     if (event.target.checked) {
