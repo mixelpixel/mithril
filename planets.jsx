@@ -84,3 +84,8 @@ function filterHandler(filterFunction) {
     }
   };
 }
+
+m.request({url: 'planets.json'}).then(data => {
+  planets = data;
+  m.mount(document.getElementById('app'), PlanetApp);
+});
