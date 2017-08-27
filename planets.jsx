@@ -43,3 +43,24 @@ class PlanetRow {
     );
   }
 }
+
+class PlanetFilters {
+  view(vnode) {
+    return (
+      <p>
+        <PlanetFilter
+            key="All"
+            func={planet => true} />
+        <PlanetFilter
+            key="Terrestrial"
+            func={planet => planet.composition === 'terrestrial'} />
+        <PlanetFilter
+            key="Gas Giant"
+            func={planet => planet.composition === 'gas giant'} />
+        <PlanetFilter
+            key="Ice Giant"
+            func={planet => planet.composition === 'ice giant'} />
+      </p>
+    );
+  }
+}
