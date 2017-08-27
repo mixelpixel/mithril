@@ -3,3 +3,9 @@ https://medium.com/front-end-hacking/how-it-feels-to-learn-javascript-in-2017-a9
 
 ### planets.json data available here:
 https://github.com/brlewis/brlewis.github.io/blob/master/2017/planets.json
+
+### what it should look like:
+https://brlewis.github.io/2017/planets.html
+
+### Mithril
+https://mithril.js.org
