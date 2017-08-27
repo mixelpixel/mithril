@@ -30,3 +30,16 @@ class PlanetTable {
     );
   }
 }
+
+class PlanetRow {
+  view(vnode) {
+    const { composition, name, moons } = vnode.attrs.planet;
+    return (
+      <tr>
+        <td>{name}</td>
+        <td>{composition}</td>
+        <td>{moons}</td>
+      </tr>
+    );
+  }
+}
