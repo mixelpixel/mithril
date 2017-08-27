@@ -15,3 +15,18 @@ class PlanetApp {
     );
   }
 }
+
+class PlanetTable {
+  view() {
+    return (
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Composition</th>
+          <th>Moons</th>
+        </tr>
+            {planets.filter(planetFilter).map(planet => <PlanetRow planet={planet} />)}
+      </table>
+    );
+  }
+}
